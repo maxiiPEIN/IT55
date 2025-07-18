@@ -1,47 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Jennifer Rodriguez </h1>
-      <h4> Aspiring Web Developer</h4>
-      <br> </br>
-            <hr>
-      <h3> About Me </h3>
-      <p> I’m a skilled web developer with experience in both front-end and back-end technologies. I specialize in building responsive, user-friendly websites using frameworks like [React, Vue, or Angular], and server-side technologies like [Node.js or Django]. I’m passionate about problem-solving and committed to delivering high-quality, scalable solutions. Always eager to learn and grow, I strive to stay up-to-date with the latest trends and tools in web development.</p>
-      
-      <hr>
-      <h3> Education</h3>
-       <li> Bamban Central Elementary School</li>
-       <li> San Roque National high School</li>
-      
-      <h3> Skills</h3>
-       <li> JavaScript (ES6+), React.js</li>
-       <li> HTML5, CSS3, SASS</li>
-       <li> Git & GitHub Version Control</li>
-       
-      
-      <h3> Experience</h3>
-      <p> Company Name – Location | Month Year – Month Year</p>
-      <li> Assisted in the development of responsive websites using HTML5, CSS3, and JavaScript</li>
-      <li> Supported back-end functionality with Node.js and Express.js</li>
-      <li> Participated in daily stand-ups, sprint planning, and code reviews as part of an Agile team</li>
-      
-      <h3> Contact Me</h3>
-      <p>091236456
-      rorrrr@gmail.com</p>
-      
-      <form>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume | Jennifer Rodriguez</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="animated"> 
 
-    <div class="form-floating">
-  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <div class="container">
+    <header>
+      <h1 class="title">Jennifer Rodriguez</h1>
+      <h4 class="subtitle">Aspiring Web Developer</h4>
+    </header>
+
+    <section class="card">
+      <h3>📘 About Me</h3>
+      <p>
+        I’m a skilled web developer with experience in both front-end and back-end technologies.
+        I specialize in building responsive, user-friendly websites using frameworks like React, Vue, or Angular,
+        and server-side technologies like Node.js or Django. I’m passionate about problem-solving and committed to
+        delivering high-quality, scalable solutions. Always eager to learn and grow, I stay up-to-date with the latest trends and tools in web development.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>🎓 Education</h3>
+      <ul>
+        <li>Bamban Central Elementary School</li>
+        <li>San Roque National High School</li>
+        <li>Dominican College of Tarlac</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>🛠 Skills</h3>
+      <ul>
+        <li>JavaScript (ES6+), React.js</li>
+        <li>HTML5, CSS3, SASS</li>
+        <li>Git & GitHub Version Control</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>💼 Experience</h3>
+      <p>Company Name – Location | Month Year – Month Year</p>
+      <ul>
+        <li>Assisted in the development of responsive websites using HTML5, CSS3, and JavaScript</li>
+        <li>Supported back-end functionality with Node.js and Express.js</li>
+        <li>Participated in daily stand-ups, sprint planning, and code reviews as part of an Agile team</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>📩 Contact Me</h3>
+      <form id="contactForm">
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h3>💬 Leave a Comment</h3>
+      <form id="commentForm">
+        <input type="text" id="commentName" placeholder="Your Name" required />
+        <textarea id="commentText" placeholder="Your Comment" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="commentList"></div>
+    </section>
+  </div>
+  <div class="socials">
+  <a href="#" target="_blank">🌐 Website</a> |
+  <a href="#" target="_blank">💼 LinkedIn</a> |
+  <a href="#" target="_blank">🐱 GitHub</a>
 </div>
-  
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-      
-      <script src="script.js"></script>
-  </body>
+
+
+  <script src="script.js"></script>
+</body>
 </html>
